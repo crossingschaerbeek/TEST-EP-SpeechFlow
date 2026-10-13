@@ -6,7 +6,7 @@ create table public.meetings (
 );
 create table public.interventions (
  id uuid primary key default gen_random_uuid(), meeting_id uuid not null references public.meetings(id) on delete cascade,
- speaker_name text not null, political_group text, allowed_ms bigint not null check(allowed_ms>0),
+ speaker_name text not null, political_group text, mode text not null default 'countdown' check(mode in ('countdown','countup')), allowed_ms bigint, check((mode='countdown' and allowed_ms>0) or (mode='countup' and allowed_ms is null)),
  used_ms bigint not null check(used_ms>=0), started_at timestamptz, ended_at timestamptz
 );
 alter table public.meetings enable row level security;
