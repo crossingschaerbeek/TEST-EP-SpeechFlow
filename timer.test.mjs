@@ -1,0 +1,2 @@
+import assert from 'node:assert/strict';import {elapsed,remaining,phase,format} from './timer.mjs';
+const r={allowedMs:60000,elapsedMs:0,startedAt:1000};assert.equal(remaining(r,51000),10000);assert.equal(phase(r,51000),'red');assert.equal(phase(r,56000),'pulse');assert.equal(remaining(r,62000),-1000);assert.equal(phase(r,62000),'over');assert.equal(format(-1000),'00:01');assert.equal(elapsed({...r,elapsedMs:30000,startedAt:null},999999),30000);assert.equal(remaining(r,121000),-60000);console.log('Timer checks passed');
