@@ -31,3 +31,12 @@ Orange de 10 secondes à plus de 5 secondes ; rouge dès 5 secondes ; chiffres r
 
 ## Version 1.4 — démarrage rapide
 Préréglage 30 secondes. Démarrer avec une file vide lance directement le chrono avec la durée et le mode choisis, nom facultatif. Sans nom, l'écran affiche simplement Temps de parole ; le rapport indique Sans intervenant. Ajouter à la file exige toujours un nom. Si la file est active et non vide, Démarrer prend son premier intervenant.
+
+## Version 1.5 — alerte après dépassement
+Orange de 10 à plus de 5 secondes. Rouge fixe de 5 secondes à zéro inclus. Après zéro : temps positif, chiffres rouges pulsants jusqu'à fin de parole. Fond bleu constant ; compteur libre sans alerte.
+
+## Version 1.6
+English interface, public display and PDF report. Centered portrait/name/group above the timer. Duration, timer mode and presets moved into the control console beside Start/Pause/End speech. Preset selection highlights the active duration. Legacy French group labels and imported directory labels are normalized to English without clearing saved meetings.
+
+## Version 1.7
+Orange from the last 10 seconds through zero inclusive. Pulsating red digits only once overtime becomes positive. Blue background unchanged. Count-up mode remains unrestricted.
