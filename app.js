@@ -97,7 +97,7 @@ const failedImages=new Set();let displayedPerson=null;
 function updatePortrait(person){
  displayedPerson=person;
  const selected=s.showName?identityImage(person,failedImages):null;
- const img=$('portrait');img.style.display=selected?'block':'none';
+ const img=$('portrait'),frame=$('portraitFrame');frame.hidden=!selected;frame.className=selected?.logo?'logo-frame'+(selected.dark?' dark-logo':''):'';img.style.display=selected?'block':'none';
  img.className=selected?.logo?'affiliation-image'+(selected.dark?' dark-logo':''):'';
  img.alt=selected?.alt||'';
  if(selected&&img.getAttribute('src')!==selected.src){img.style.visibility='hidden';img.src=selected.src;}

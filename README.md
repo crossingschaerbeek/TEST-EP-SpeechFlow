@@ -56,3 +56,6 @@ Individual photo takes priority; missing or failed portraits fall back to the of
 
 ## Version 1.12
 Affiliation logos are horizontally and vertically centered inside their square on the public display and PDF report. Individual portrait framing remains unchanged.
+
+## Version 1.13
+Square logo container centered with an independent contain-fit image. All packaged SVGs declare intrinsic width/height matching their viewBox and preserveAspectRatio=xMidYMid meet. Portrait crop behavior retained.
