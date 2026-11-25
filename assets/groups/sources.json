@@ -9,5 +9,9 @@
     "greens": "https://www.greens-efa.eu/en/",
     "left": "https://left.eu",
     "esn": "https://esn-group.eu"
+  },
+  "parliamentLogo": {
+    "url": "https://www.europarl.europa.eu/portal/img/ep-logo.svg",
+    "retrievedAt": "2026-11-24"
   }
 }

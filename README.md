@@ -40,3 +40,16 @@ English interface, public display and PDF report. Centered portrait/name/group a
 
 ## Version 1.7
 Orange from the last 10 seconds through zero inclusive. Pulsating red digits only once overtime becomes positive. Blue background unchanged. Count-up mode remains unrestricted.
+
+## Staff directory (1.9)
+
+Open **Staff directory** in Speaker details and import an approved JSON file. It replaces only the staff list and stays in the browser. For example (fictional names):
+
+```json
+[{"name":"Alex Martin","department":"Conference Services"},{"name":"Sam Laurent"}]
+```
+
+Only name is required. An optional HTTPS photo URL can be supplied if approved, or choose a manual photo for an intervention. Speakers whose names are not in either directory can still be entered directly. If a name matches more than one record, automatic photo and department lookup is skipped; enter the department and photo manually. Removing the directory does not remove past interventions.
+
+## Version 1.11 — automatic logo fallback
+Individual photo takes priority; missing or failed portraits fall back to the official parliamentary group logo or the European Parliament logo for any of the 16 preloaded DG codes. Applies to public display (including queued speaker preview) and PDF. Logos are included locally and preserve aspect ratio. Unknown affiliations and non-attached members without a photo show no invented emblem. The name/photo visibility option still hides both. No deployment performed.
