@@ -53,3 +53,6 @@ Only name is required. An optional HTTPS photo URL can be supplied if approved, 
 
 ## Version 1.11 — automatic logo fallback
 Individual photo takes priority; missing or failed portraits fall back to the official parliamentary group logo or the European Parliament logo for any of the 16 preloaded DG codes. Applies to public display (including queued speaker preview) and PDF. Logos are included locally and preserve aspect ratio. Unknown affiliations and non-attached members without a photo show no invented emblem. The name/photo visibility option still hides both. No deployment performed.
+
+## Version 1.12
+Affiliation logos are horizontally and vertically centered inside their square on the public display and PDF report. Individual portrait framing remains unchanged.
